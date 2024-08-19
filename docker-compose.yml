@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  oracle:
+    image: gvenzl/oracle-xe
+    environment:
+      - ORACLE_PASSWORD=${ORACLE_PASSWORD}
+      - ORACLE_CHARACTERSET=${ORACLE_CHARACTERSET}
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  studentapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - ConnectionStrings__OracleConnection=${ORACLE_CONNECTION_STRING}
+      - ConnectionStrings__MongoConnection=${MONGO_CONNECTION_STRING}
+    ports:
+      - "8080:80"  # Alterar para 8080:8080 se mudar a exposição da porta no Dockerfile
+    depends_on:
+      - oracle
+      - mongodb
+
+volumes:
+  oracle-data:
+  mongo-data:
