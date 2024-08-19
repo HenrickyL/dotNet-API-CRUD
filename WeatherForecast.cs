@@ -1,4 +1,4 @@
-namespace ApiCrud;
+namespace StudentApi;
 
 public class WeatherForecast
 {

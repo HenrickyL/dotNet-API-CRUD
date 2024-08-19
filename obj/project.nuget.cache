@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M9cA8y/4TZQArN3xR1WOnHFb80AT0iJ62kLGh4GF9x6Gqnls/4Z3rW5l0vx2V0yojyivKD4tnLrMgXzz6dSb3A==",
+  "dgSpecHash": "gLAqSHsxEAhReNnfRjw6KLOzD3m3j0m7+zy3E59e+WJKkLVKq1dN0Ex+e+wr2J3YVFS4ucBBiNpcNk4aEjK4Zg==",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\ws-api-crud\\ApiCRUD\\ApiCrud\\ApiCrud.csproj",
+  "projectFilePath": "D:\\Workspace\\ws-api-crud\\StudentApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

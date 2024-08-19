@@ -522,11 +522,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\ws-api-crud\\ApiCRUD\\ApiCrud\\ApiCrud.csproj",
-      "projectName": "ApiCrud",
-      "projectPath": "D:\\Workspace\\ws-api-crud\\ApiCRUD\\ApiCrud\\ApiCrud.csproj",
+      "projectUniqueName": "D:\\Workspace\\ws-api-crud\\StudentApi.csproj",
+      "projectName": "StudentApi",
+      "projectPath": "D:\\Workspace\\ws-api-crud\\StudentApi.csproj",
       "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\ws-api-crud\\ApiCRUD\\ApiCrud\\obj\\",
+      "outputPath": "D:\\Workspace\\ws-api-crud\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
