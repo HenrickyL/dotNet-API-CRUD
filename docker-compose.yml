@@ -1,11 +1,12 @@
 version: '3.8'
 services:
   oracle:
-    image: gvenzl/oracle-xe
+    image: oracleinanutshell/oracle-xe-11g
     environment:
       - ORA_USER=SYSTEM
       - ORA_PASS=YourPassword
       - ORA_CONN=//oracle:1521/XEPDB1
+      - ORACLE_CONNECTION_STRING=User Id=SYSTEM;Password=YourPassword;Data Source=oracle:1521/XEPDB1;
       - ORACLE_CHARACTERSET=AL32UTF8
     ports:
       - "1521:1521"
