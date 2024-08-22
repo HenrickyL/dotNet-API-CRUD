@@ -1,17 +1,15 @@
 version: '3.8'
 services:
-  oracle:
-    image: oracleinanutshell/oracle-xe-11g
+  postgres:
+    image: postgres:latest
     environment:
-      - ORA_USER=SYSTEM
-      - ORA_PASS=YourPassword
-      - ORA_CONN=//oracle:1521/XEPDB1
-      - ORACLE_CONNECTION_STRING=User Id=SYSTEM;Password=YourPassword;Data Source=oracle:1521/XEPDB1;
-      - ORACLE_CHARACTERSET=AL32UTF8
+      POSTGRES_USER: YourUsername
+      POSTGRES_PASSWORD: YourPassword
+      POSTGRES_DB: StudentDB
     ports:
-      - "1521:1521"
+      - "5432:5432"
     volumes:
-      - oracle-data:/opt/oracle/oradata
+      - postgres-data:/var/lib/postgresql/data
 
   mongodb:
     image: mongo
@@ -21,5 +19,5 @@ services:
       - mongo-data:/data/db
 
 volumes:
-  oracle-data:
   mongo-data:
+  postgres-data:

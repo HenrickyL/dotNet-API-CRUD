@@ -21,23 +21,32 @@ public class StudentServiceTests
         _service = new StudentService(_mockUnitOfWork.Object);
     }
 
-    [Fact]
-    public async Task GetAllStudentsAsync_ShouldReturnAllStudents()
+    [Theory]
+    [InlineData("John Doe")]
+    [InlineData("Jane Doe")]
+    public async Task GetAllStudentsAsync_ReturnsAllStudents(string name)
     {
         // Arrange
-        var students = new List<Student>
+        var studentList = new List<Student>
         {
-            new Student("John Doe"),
-            new Student("Jane Smith")
+            new Student(name)
         };
 
-        _mockStudentRepository.Setup(r => r.GetAllAsync()).ReturnsAsync(students);
+        var mockRepository = new Mock<IRepository<Student>>();
+        mockRepository.Setup(repo => repo.GetAllAsync())
+            .ReturnsAsync(studentList);
+
+        var mockUnitOfWork = new Mock<IUnitOfWork>();
+        mockUnitOfWork.Setup(uow => uow.Students)
+            .Returns(mockRepository.Object);
+
+        var studentService = new StudentService(mockUnitOfWork.Object);
 
         // Act
-        var result = await _service.GetAllStudentsAsync();
+        var result = await studentService.GetAllStudentsAsync();
 
         // Assert
-        result.Should().BeEquivalentTo(students);
+        result.Should().BeEquivalentTo(studentList);
     }
 
 }

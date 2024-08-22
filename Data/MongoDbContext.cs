@@ -1,6 +1,5 @@
 ﻿using MongoDB.Driver;
 using StudentApi.Models;
-using System.Configuration;
 
 
 namespace StudentApi.Data;

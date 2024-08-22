@@ -6,8 +6,9 @@ public class MongoRepository<TEntity> : IRepository<TEntity> where TEntity : Ent
 {
     private readonly IMongoCollection<TEntity> _collection;
 
-    public MongoRepository(MongoDbContext context, string collectionName)
+    public MongoRepository(MongoDbContext context)
     {
+        string collectionName = typeof(TEntity).Name + 's';
         _collection = context.GetDatabase().GetCollection<TEntity>(collectionName);
     }
 

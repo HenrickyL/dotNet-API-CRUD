@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qZoF/r0FawwGCrWEKAVeKKqTQnaa2eUZb6sLDcvi6mddPnr1PA6UrGO/A5B5+Q7S7HGQSN9MS+QYawrGqLnpmg==",
+  "dgSpecHash": "PyBWgt9jGZEtZ5Oul75cfjObzH/iIKzHPiFK7GMTpk/EjL5oXzIcLORnHeahByAd/DyhvHZXnH+IdPlIku12IQ==",
   "success": true,
   "projectFilePath": "D:\\Workspace\\ws-api-crud\\StudentApi.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.8\\microsoft.entityframeworkcore.analyzers.8.0.8.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.8\\microsoft.entityframeworkcore.design.8.0.8.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.8\\microsoft.entityframeworkcore.relational.8.0.8.nupkg.sha512",
+    "C:\\Users\\henri\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.8\\microsoft.entityframeworkcore.tools.8.0.8.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
@@ -42,6 +43,8 @@
     "C:\\Users\\henri\\.nuget\\packages\\mongodb.libmongocrypt\\1.11.0\\mongodb.libmongocrypt.1.11.0.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
+    "C:\\Users\\henri\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
+    "C:\\Users\\henri\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\oracle.entityframeworkcore\\8.23.50\\oracle.entityframeworkcore.8.23.50.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\oracle.manageddataaccess.core\\23.5.0\\oracle.manageddataaccess.core.23.5.0.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",

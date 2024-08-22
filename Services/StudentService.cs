@@ -1,4 +1,5 @@
 ﻿using StudentApi.Data;
+using StudentApi.DTO;
 using StudentApi.Models;
 
 namespace StudentApi.Services;
@@ -22,8 +23,9 @@ public class StudentService
         return await _unitOfWork.Students.GetByIdAsync(id);
     }
 
-    public async Task AddStudentAsync(Student student)
+    public async Task AddStudentAsync(StudentCreateRequest request)
     {
+        var student = new Student(request.Name);
         await _unitOfWork.Students.AddAsync(student);
         await _unitOfWork.CompleteAsync();
     }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StudentApi.DTO;
 using StudentApi.Models;
 using StudentApi.Services;
 
@@ -34,10 +35,10 @@ public class StudentController : Controller
     }
 
     [HttpPost]
-    public async Task<ActionResult> AddStudent([FromBody] Student student)
+    public async Task<ActionResult> AddStudent([FromBody] StudentCreateRequest student)
     {
         await _studentService.AddStudentAsync(student);
-        return CreatedAtAction(nameof(GetStudent), new { id = student.Id }, student);
+        return CreatedAtAction(nameof(GetStudent), new { Name = student.Name }, student);
     }
 
     [HttpPut("{id}")]
